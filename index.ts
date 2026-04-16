@@ -3,7 +3,6 @@ import express, { Request, Response } from "express";
 const app = express();
 
 app.get("/health", (req: Request, res: Response) => {
-  console.log("received this message, keep on going!");
   res.status(200).json({ message: "hi" });
 });
 
